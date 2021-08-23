@@ -14,10 +14,9 @@ Code here
 ```
 
 
-### Team: xxxxxxx
+### Team: 010 นอนชนะ
 
-1. ชื่อ นามสกุล     StudentID: 63130500xxx
-2. ชื่อ นามสกุล     StudentID: 63130500xxx
-3. ชื่อ นามสกุล     StudentID: 63130500xxx
-4. ชื่อ นามสกุล     StudentID: 63130500xxx
-5. ชื่อ นามสกุล     StudentID: 63130500xxx
+1. กาญจนาพร   ชื่นมณีรัตน์     StudentID: 63130500005
+2. ชยากร      งามโอฬารเลิศ   StudentID: 63130500017
+3. ณัฐณิชา     ธรรมโชติ      StudentID: 63130500033
+4. ณัฐธิดา      มีบุญ         StudentID: 63130500034
