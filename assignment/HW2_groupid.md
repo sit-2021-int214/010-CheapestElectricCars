@@ -48,8 +48,8 @@ table(cats$Sex)
 
 3.) หาค่าเฉลี่ยของน้ำหนักตัวของแมวตัวผู้ 
 ```{R}
-mcats <- cats[1:47,]
-mean(fcats$Hwt)
+mcats <- cats[48:length(cats$Sex),]
+mean(mcats$Bwt)
 ```
 #น้ำหนักตัวเฉลี่ยของแมวตัวผู้อยู่ที่ 2.9
 
@@ -61,8 +61,8 @@ sum(cats$Bwt)
 
 5.) แมวเพศเมียมีค่าเฉลี่ยน้ำหนักหัวใจอยู่ที่เท่าไหร่
 ```{R}
-fcats <- cats[48:length(cats$Sex),]
-mean(mcats$Bwt)
+fcats <- cats[1:47,]
+mean(fcats$Hwt)
 ```
 #9.202128
 
