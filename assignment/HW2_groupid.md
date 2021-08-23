@@ -1,18 +1,37 @@
 # Assignment 2 (Group)
 Explore 2 dataset that given then finding descriptive statistics and summary result in form of sentences/paragraph at least 5 topics.
 
-### Answer
+### Answer1 : Survey
 
-1.) From survey, most students use left hand writing.
+1.) หาว่ามีเพศไหนทำแบบสำรวจนี้เยอะกว่ากัน
 ```{R}
 Code here
 ```
+มีจำนวนเท่ากันคือ 118 คน
 
-2.) Descriptive statistics Statement
+2.) หาว่าอายุเฉลี่ยของคนทำ survey คือเท่าไหร่
 ```{R}
 Code here
 ```
+มีอายุเฉลี่ย 20
 
+3.) หาค่าเฉลี่ยความสูงของคนทำ survey 
+```{R}
+Code here
+```
+อายุเฉลี่ยคือ 20 ปี
+4.) หามีผู้ทำ survey สูบบุหรี่จัดกี่คน
+```{R}
+Code here
+```
+มีผู้สูบบุหรี่จัด 11 คน
+5.) ผู้ที่มีชีพจรเต้นด้วยอัตราน้อยที่สุด ว่าเต้นเท่าไหร่
+```{R}
+Code here
+```
+35
+
+### Answer2 : Cats
 
 ### Team: 010 นอนชนะ
 
