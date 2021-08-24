@@ -21,7 +21,7 @@ mean(survey$Height,na.rm = TRUE)
 ```
 #อายุเฉลี่ยคือ 20 ปี
 
-4.) หามีผู้ทำ survey สูบบุหรี่จัดกี่คน
+4.) หาผู้ทำ survey สูบบุหรี่จัดกี่คน
 ```{R}
 table(survey$Smoke)
 ```
