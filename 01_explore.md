@@ -82,7 +82,7 @@ vehicle %>% select(Name,`FastChargeSpeed(km/h)`)%>%filter(`FastChargeSpeed(km/h)
 #- lowest Acceleration
 vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max(`Acceleration(sec)`))
 ```
-Result :
+Result : คำตอบจ้าาาา
 ```
 
 ```
