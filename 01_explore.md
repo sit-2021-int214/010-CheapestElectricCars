@@ -71,6 +71,70 @@ Result :
 
 ```
 
+### 3) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 4) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 5) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 6) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 7) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 8) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+### 9) Question
+```{R}
+
+```
+Result :
+```
+
+```
+
+
 
 
 
