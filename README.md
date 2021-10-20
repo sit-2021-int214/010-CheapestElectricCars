@@ -12,10 +12,10 @@ This dataset contains content related to electric cars. With information such as
 We chose this dataset because we want to study the data of electric cars. Which contains information that currently, each car model, each brand, performance has been developed more.Because the trend of driving electric cars is getting more than in the past. There are more driving and selection options. which is necessary to bring information in which various fields of each model in the dataset are cleaned, analyzed and compared to find the best value.
 
 ### Steps
-1.Define a question
-2.Exploring the dataset from many websites
-3.Loading library and dataset are loaded from files ... which are compiled by…
-4.Explore the dataset from the original dataset
+- Define a question
+- Exploring the dataset from many websites
+- Loading library and dataset are loaded from files ... which are compiled by…
+- Explore the dataset from the original dataset
   - Delete a unit of data in each row.
   - Change the data type according to the data.
   - Rename columns to have units.
