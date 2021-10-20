@@ -33,26 +33,19 @@ We chose this dataset because we want to study the data of electric cars. Which 
           9. ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
 
 
-# Step 1 Loading library and dataset
-```{R}
-#library
-library(readr)
-library(stringr)
-library(dplyr)
+## Explore Data
 
-#Dataset
-read_csv("https://raw.githubusercontent.com/sit-2021-int214/015-WorldCup/master/worldcupclean.csv")
-worldcup <- read_csv("https://raw.githubusercontent.com/sit-2021-int214/015-WorldCup/master/worldcupclean.csv")
-View(worldcup)
+```{R}
+vehicle <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/010-CheapestElectricCars/main/Cheapestelectriccars-EVDatabase.csv");
+View(vehicle)
 ```
 
-  summarise(Goals = sum(Total.Goals))
-maximumGoals <- maximumGoals %>% 
-  filter(Goals == max(Goals))
-View(maximumGoals)
-```
-#### Result : ปีที่มีจำนวนการยิงประตูรวมมากที่สุดคือปี 2014 มีจำนวนประตูทั้งหมด 280 ประตู
-```{R}
-     Year   Goals
-1    2014   280
-```
+
+
+
+
+
+
+
+
+
