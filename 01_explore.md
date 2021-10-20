@@ -40,6 +40,13 @@ vehicle <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/010-Cheap
 View(vehicle)
 ```
 
+## Observe
+
+```{R}
+vehicle <- as_tibble(vehicle)
+glimpse(vehicle)
+View(vehicle)
+```
 
 
 
