@@ -8,10 +8,10 @@ Original Datasets from: [kaggle](https://www.kaggle.com/kkhandekar/cheapest-elec
   2. Exploring the dataset from many websites.
   3. Loading library and dataset are loaded from files ... which are compiled by...
   4. Explore the dataset from the original dataset.
-  - Delete a unit of data in each row.
-  - Change the data type according to the data.
-  - Rename columns to have units.
-  - Check data that is NA.
+      - Delete a unit of data in each row.
+      - Change the data type according to the data.
+      - Rename columns to have units.
+      - Check data that is NA.
 
 
 
