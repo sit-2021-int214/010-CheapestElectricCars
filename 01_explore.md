@@ -4,10 +4,11 @@
 Original Datasets from: [kaggle](https://www.kaggle.com/kkhandekar/cheapest-electric-cars?fbclid=IwAR0_1it-Db3IslU0N8CIyAZtnZmBqfDQXAeH6h04Z-xnvnfhe4CUeVlgDxk)
 
 ## Steps
-  1.Define a question
+  1. Define a question
   2. Exploring the dataset from many websites
-  3. Loading library and dataset are loaded from files ... which are compiled by…
-  4. Explore the dataset from the original dataset
+  3. 
+  4. Loading library and dataset are loaded from files ... which are compiled by…
+  5. Explore the dataset from the original dataset
   - Delete a unit of data in each row.
   - Change the data type according to the data.
   - Rename columns to have units.
