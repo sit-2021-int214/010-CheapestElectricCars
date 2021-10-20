@@ -48,7 +48,7 @@ ouput
 
 ## Part 3: Transform data with dplyr and finding insight the data
 
--Find max sales on order in 2017
+- Find max sales on order in 2017
 
 ```
 superstore_sales %>% filter(format(as.Date(Ship.Date, format="%d/%m/%Y"),"%Y") == 2017) %>% select(Sales) %>% max()
@@ -60,7 +60,7 @@ Result:
 > superstore_sales %>% filter(format(as.Date(Ship.Date, format="%d/%m/%Y"),"%Y") == 2017) %>% select(Sales) %>% max()
 [1] 17499.95
 ```
-Find number data of this data set
+- Find number data of this data set
 
 ```
 superstore_sales %>% count()
@@ -74,7 +74,7 @@ Result:
 1 9800
 ```
 
--Find minimal sales of this dataset
+- Find minimal sales of this dataset
 
 ```
 superstore_sales$Sales %>% min()
@@ -87,7 +87,7 @@ Result:
 [1] 0.444
 ```
 
--Find number of region of this dataset
+- Find number of region of this dataset
 
 ```
 superstore_sales %>% distinct(Region) %>% count()
@@ -100,7 +100,7 @@ Result:
   n
 1 4
 ```
--Find number of data in Kentucky state in this dataset
+- Find number of data in Kentucky state in this dataset
 
 ```
 superstore_sales %>% filter(State == "Kentucky") %>% count()
@@ -113,7 +113,7 @@ Result:
     n
 1 137
 ```
--Find minimal sales on furniture category
+- Find minimal sales on furniture category
 
 ```
 superstore_sales %>% filter(Category == "Furniture") %>% select(Sales) %>% min()
