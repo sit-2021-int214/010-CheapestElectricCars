@@ -84,7 +84,22 @@ vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max
 ```
 Result :
 ```
-
+#- highest top speed
+Name TopSpeed(km/h)
+1 Tesla Roadster             410
+#- highest range
+Name Range(km)
+1 Tesla Roadster        970
+#- highest efficiency
+Name Efficiency(Wh/km)
+1       Mercedes EQV 300 Long               281
+2 Mercedes EQV 300 Extra-Long               281
+#- highest FastChargeSpeed
+Name FastChargeSpeed(km/h)
+1 Lucid Air Pure                  1410
+#- lowest Acceleration
+Name Acceleration(sec)
+1 Renault Kangoo Maxi ZE 33              22.4
 ```
 
 ### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
