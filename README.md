@@ -14,9 +14,15 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 เนื่องจากมีข้อมูลหลากหลายประเภท ทำให้ง่ายต่อการนำมาใช้งาน ข้อมูลมีปริมาณเหมาะสมเข้าใจง่าย
 
 ### Steps
+1.Define a question
+2. Exploring the dataset from many websites
+3. Loading library and dataset are loaded from files ... which are compiled by…
+4. Explore the dataset from the original dataset
+  - Delete a unit of data in each row.
+  - Change the data type according to the data.
+  - Rename columns to have units.
+  - Check data that is NA.
 
-### Define a question
-### Observe
 
 ### Tools
 
