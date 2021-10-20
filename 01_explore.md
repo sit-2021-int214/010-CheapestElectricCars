@@ -82,7 +82,7 @@ vehicle %>% select(Name,`FastChargeSpeed(km/h)`)%>%filter(`FastChargeSpeed(km/h)
 #- lowest Acceleration
 vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max(`Acceleration(sec)`))
 ```
-Result : คำตอบจ้าาาา
+Result :
 ```
 
 ```
@@ -93,7 +93,8 @@ vehicle %>% select(Name,`PriceinUK(Â£)`)%>%filter(`PriceinUK(Â£)`*46.17 == m
 ```
 Result :
 ```
-
+[1] Name          PriceinUK(Â£)
+<0 rows> (or 0-length row.names)
 ```
 
 ### 3) รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
