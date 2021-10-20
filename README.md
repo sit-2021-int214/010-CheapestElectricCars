@@ -36,7 +36,7 @@ We chose this dataset because we want to study the data of electric cars. Which 
 
 ### Important Files in Repository
 
-- [code_Cheapestelectriccars.R](./R_groupAssignment.R) : Exploratory Data Analysis
+- [Cheapestelectriccars.R](./R_groupAssignment.R) : Exploratory Data Analysis
 - [Cheapestelectriccars-EVDatabase.csv](./Cheapestelectriccars-EVDatabase.csv): Original Dataset
 - [CheapestElectricCars(Clean).csv](./cheapestElectricCars(Clean).csv): Clean Dataset
 
