@@ -5,12 +5,13 @@ Original Datasets from: [kaggle](https://www.kaggle.com/kkhandekar/cheapest-elec
 
 ### About's Products Datasets
 
-This dataset is about's sample uniqlo product that sell in 2021. It includes productID, name of products, type of products, price of products, and number of sold.
+This dataset is about's Electric Vehicles (EV) with spec. It includes Name, Subtitle, Acceleration, TopSpeed, Range, Efficiency, FastChargeSpeed, Drive, NumberofSeats, PriceinGermany.
 
 ## Overview
 
 // Write Statement here
 E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
+เนื่องจากมีข้อมูลหลากหลายประเภท ทำให้ง่ายต่อการนำมาใช้งาน ข้อมูลมีปริมาณเหมาะสมเข้าใจง่าย
 
 ### Steps
 
@@ -32,7 +33,7 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 ### Important Files in Repository
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
-- [products_original.csv](./products_original.csv): Original Dataset
+- [products_original.csv](./): Original Dataset
 - [products_clean.csv](./products_original.csv): Clean Dataset
 
 ### References
