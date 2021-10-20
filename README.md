@@ -38,7 +38,7 @@ We chose this dataset because we want to study the data of electric cars. Which 
 
 - [code_eda.R](./code_eda.R) : Exploratory Data Analysis
 - [Cheapestelectriccars-EVDatabase.csv](./Cheapestelectriccars-EVDatabase.csv): Original Dataset
-- [products_clean.csv](./cheapestElectricCars(Clean).csv): Clean Dataset
+- [CheapestElectricCars(Clean).csv](./cheapestElectricCars(Clean).csv): Clean Dataset
 
 ### References
 
