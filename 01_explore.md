@@ -53,7 +53,7 @@ View(vehicle)
 ```
 
 ## Explore Analysis
-### 1) Question
+### 1) รถคันไหนที่มีประสิทธิภาพสูงที่สุด
 ```{R}
 #- highest top speed
 vehicle %>% select(Name,`TopSpeed(km/h)`)%>% filter(`TopSpeed(km/h)` == max(`TopSpeed(km/h)`))
@@ -71,36 +71,36 @@ Result :
 
 ```
 
-### 2) Question
+### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
 ```{R}
-
+vehicle %>% select(Name,`PriceinUK(Â£)`)%>%filter(`PriceinUK(Â£)`*46.17 == max(`PriceinUK(Â£)`*46.17,na.rm = T))
 ```
 Result :
 ```
 
 ```
 
-### 3) Question
+### 3) รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
 ```{R}
-
+vehicle %>%select(Name,NumberofSeats,`PriceinUK(Â£)`) %>%filter(NumberofSeats == 4 & `PriceinUK(Â£)` < mean(`PriceinUK(Â£)`,na.rm = T))
 ```
 Result :
 ```
 
 ```
 
-### 4) Question
+### 4) จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
 ```{R}
-
+vehicle %>% filter(NumberofSeats == max(NumberofSeats)) %>% count() - vehicle %>% filter(NumberofSeats == min(NumberofSeats)) %>% count()
 ```
 Result :
 ```
 
 ```
 
-### 5) Question
+### 5) มีรถยี่ห้อใดบ้างที่ขับเคลื่อนด้วยล้อหน้าคันใดบ้างที่มีความเร็วสูงกว่า 150 km/h
 ```{R}
-
+vehicle %>%filter(Drive == "Front Wheel Drive" & `TopSpeed(km/h)` > 150) %>% select(Name)
 ```
 Result :
 ```
