@@ -5,7 +5,7 @@ Original Datasets from: [kaggle](https://www.kaggle.com/kkhandekar/cheapest-elec
 
 ### About's Products Datasets
 
-This dataset is about's Electric Vehicles (EV) with spec. It includes Name, Subtitle, Acceleration, TopSpeed, Range, Efficiency, FastChargeSpeed, Drive, NumberofSeats, PriceinGermany.
+This dataset contains content related to electric cars. With information such as brand and model name of the car including characteristics, capabilities of that car model, along with price information.
 
 ## Overview
 
@@ -15,8 +15,20 @@ E.g. กลุ่มของเราเลือกชุดข้อมูล
 
 ### Steps
 
-1. Define a question
-2. Observe...
+### Define a question
+1. รถคันไหนที่มีประสิทธิภาพสูงที่สุด
+2. รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
+3. รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
+4. จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
+5. มีรถยี่ห้อใดบ้างที่ขับเคลื่อนด้วยล้อหน้าคันใดบ้างที่มีความเร็วสูงกว่า 150 km/h
+6. ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
+7. รถที่ราคาต่ำสุดในการขับเคลื่อนของล้อแต่ละแบบ
+8. รถคันใดที่มีความเร็วและประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
+9. ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
+
+
+
+### Observe...
 
 ### Tools
 
