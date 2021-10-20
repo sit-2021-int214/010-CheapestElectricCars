@@ -49,7 +49,23 @@ View(vehicle)
 ```
 ## Data Cleaning
 ```{R}
+vehicle <- distinct(vehicle)
+vehicle$Acceleration<-vehicle$Acceleration %>% str_remove("sec") %>% str_trim() %>% as.numeric() 
+vehicle$TopSpeed<-vehicle$TopSpeed %>% str_remove("km/h") %>% str_trim() %>% as.numeric()
+vehicle$Range<-vehicle$Range %>% str_remove("km") %>% str_trim() %>%as.numeric()
+vehicle$Efficiency<-vehicle$Efficiency %>% str_remove("Wh/km") %>% str_replace("-","0") %>% str_trim() %>% as.numeric()
+vehicle$FastChargeSpeed<-vehicle$FastChargeSpeed %>% str_remove("km/h") %>% str_trim() %>% as.numeric()
+vehicle$NumberofSeats<-vehicle$NumberofSeats %>% as.numeric()
+vehicle$PriceinGermany<-vehicle$PriceinGermany %>% str_remove("â,¬") %>% str_remove(",") %>% as.numeric()
+vehicle$PriceinUK<-vehicle$PriceinUK %>% str_remove("Â£") %>% str_remove(",") %>% as.numeric()
 
+vehicle <- vehicle %>% rename(`Acceleration(sec)` = Acceleration)
+vehicle <- vehicle %>% rename(`TopSpeed(km/h)` = TopSpeed)
+vehicle <- vehicle %>% rename(`Range(km)` = Range)
+vehicle <- vehicle %>% rename(`Efficiency(Wh/km)` = Efficiency)
+vehicle <- vehicle %>% rename(`FastChargeSpeed(km/h)` = FastChargeSpeed)
+vehicle <- vehicle %>% rename(`PriceinGermany(â,¬)` = PriceinGermany)
+vehicle <- vehicle%>% rename(`PriceinUK(Â£)` = PriceinUK)
 ```
 
 ## Explore Analysis
