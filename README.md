@@ -9,9 +9,7 @@ This dataset contains content related to electric cars. With information such as
 
 ## Overview
 
-// Write Statement here
-E.g. กลุ่มของเราเลือกชุดข้อมูลนี้เพราะต้องการศึกษา.....
-เนื่องจากมีข้อมูลหลากหลายประเภท ทำให้ง่ายต่อการนำมาใช้งาน ข้อมูลมีปริมาณเหมาะสมเข้าใจง่าย
+We chose this dataset because we want to study the data of electric cars. Which contains information that currently, each car model, each brand, performance has been developed more.Because the trend of driving electric cars is getting more than in the past. There are more driving and selection options. which is necessary to bring information in which various fields of each model in the dataset are cleaned, analyzed and compared to find the best value.
 
 ### Steps
 1.Define a question
