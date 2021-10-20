@@ -47,11 +47,29 @@ vehicle <- as_tibble(vehicle)
 glimpse(vehicle)
 View(vehicle)
 ```
+## Data Cleaning
+```{R}
 
+```
 
+## Explore Analysis
+### 1) Question
+```{R}
 
+```
+Result :
+```
 
+```
 
+### 2) Question
+```{R}
+
+```
+Result :
+```
+
+```
 
 
 
