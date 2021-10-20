@@ -107,36 +107,41 @@ Result :
 
 ```
 
-### 6) Question
+### 6) ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
 ```{R}
-
+vehicle %>% filter(str_detect(Name,"Tesla") & (`TopSpeed(km/h)` == max(`TopSpeed(km/h)`) & `Acceleration(sec)` == min(`Acceleration(sec)`)))%>%select(`TopSpeed(km/h)`,`Acceleration(sec)`)
 ```
 Result :
 ```
 
 ```
 
-### 7) Question
+### 7) รถที่ราคาต่ำสุดในการขับเคลื่อนของล้อแต่ละแบบ
 ```{R}
-
+frontvehicle <- vehicle%>%filter(Drive == "Front Wheel Drive")
+allvehicle <- vehicle %>% filter(Drive == "All Wheel Drive")
+rearvehicle <- vehicle %>% filter(Drive == "Rear Wheel Drive")
+vehicle %>% filter(Drive == "Front Wheel Drive" &`PriceinUK(Â£)` == min(frontvehicle$`PriceinUK(Â£)`,na.rm = T))
+vehicle %>% filter(Drive == "All Wheel Drive" & `PriceinUK(Â£)` == min(allvehicle$`PriceinUK(Â£)`,na.rm = T))
+vehicle %>% filter(Drive == "Rear Wheel Drive" & `PriceinUK(Â£)` == min(rearvehicle$`PriceinUK(Â£)`,na.rm = T))
 ```
 Result :
 ```
 
 ```
 
-### 8) Question
+### 8) รถคันใดที่มีความเร็วและประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
 ```{R}
-รถคันใดที่มีความเร็วและประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
+vehicle %>% filter(`Efficiency(Wh/km)` == max(`Efficiency(Wh/km)`))
 ```
 Result :
 ```
 
 ```
 
-### 9) Question
+### 9) ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
 ```{R}
-
+vehicle %>% summarise(mean(`Efficiency(Wh/km)`))
 ```
 Result :
 ```
