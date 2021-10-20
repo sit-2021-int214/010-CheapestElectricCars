@@ -55,7 +55,16 @@ View(vehicle)
 ## Explore Analysis
 ### 1) Question
 ```{R}
-
+#- highest top speed
+vehicle %>% select(Name,`TopSpeed(km/h)`)%>% filter(`TopSpeed(km/h)` == max(`TopSpeed(km/h)`))
+#- highest range
+vehicle %>% select(Name,`Range(km)`)%>%filter(`Range(km)` == max(`Range(km)`))
+#- highest efficiency
+vehicle %>% select(Name,`Efficiency(Wh/km)`)%>%filter(`Efficiency(Wh/km)` == max(`Efficiency(Wh/km)`))
+#- highest FastChargeSpeed
+vehicle %>% select(Name,`FastChargeSpeed(km/h)`)%>%filter(`FastChargeSpeed(km/h)` == max(`FastChargeSpeed(km/h)`,na.rm = T))
+#- lowest Acceleration
+vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max(`Acceleration(sec)`))
 ```
 Result :
 ```
@@ -127,7 +136,7 @@ Result :
 
 ### 9) Question
 ```{R}
-ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
+
 ```
 Result :
 ```
