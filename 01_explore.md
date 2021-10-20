@@ -13,7 +13,16 @@ We chose this dataset because we want to study the data of electric cars. Which 
 
 ## Steps
   1. Define a question.
-      ``` 1. รถคันไหนที่มีประสิทธิภาพสูงที่สุด
+  2. Exploring the dataset from many websites.
+  3. Loading library and dataset are loaded from files ... which are compiled by…
+  4. Explore the dataset from the original dataset
+      - Delete a unit of data in each row.
+      - Change the data type according to the data.
+      - Rename columns to have units.
+      - Check data that is NA.
+      
+ ## Define a question.
+          1. รถคันไหนที่มีประสิทธิภาพสูงที่สุด
           2. รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
           3. รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
           4. จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
@@ -22,8 +31,6 @@ We chose this dataset because we want to study the data of electric cars. Which 
           7. รถที่ราคาต่ำสุดในการขับเคลื่อนของล้อแต่ละแบบ
           8. รถคันใดที่มีความเร็วและประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
           9. ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
-      ```
-  
 
 
 # Step 1 Loading library and dataset
