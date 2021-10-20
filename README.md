@@ -42,7 +42,8 @@ We chose this dataset because we want to study the data of electric cars. Which 
 
 ### References
 
-// Link
+Dataset : [Cheapest Electric Cars | Kaggle](https://www.kaggle.com/kkhandekar/cheapest-electric-cars?fbclid=IwAR0_1it-Db3IslU0N8CIyAZtnZmBqfDQXAeH6h04Z-xnvnfhe4CUeVlgDxk)
+Template : https://github.com/sit-2021-int214/int214-template
 
 ## About Us
 
