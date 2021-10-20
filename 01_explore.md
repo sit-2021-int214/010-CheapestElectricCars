@@ -22,7 +22,7 @@ We chose this dataset because we want to study the data of electric cars. Which 
       - Check data that is NA.
       
  ## Define a question.
-          1. รถคันไหนที่มีประสิทธิภาพสูงที่สุด
+          1. รถคันไหนที่มีประสิทธิภาพสูงที่สุดในแต่ละด้าน
           2. รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
           3. รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
           4. จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
@@ -69,7 +69,7 @@ vehicle <- vehicle%>% rename(`PriceinUK(Â£)` = PriceinUK)
 ```
 
 ## Explore Analysis
-### 1) รถคันไหนที่มีประสิทธิภาพสูงที่สุด
+### 1) รถคันไหนที่มีประสิทธิภาพสูงที่สุดในแต่ละด้าน
 ```{R}
 #- highest top speed
 vehicle %>% select(Name,`TopSpeed(km/h)`)%>% filter(`TopSpeed(km/h)` == max(`TopSpeed(km/h)`))
@@ -82,7 +82,12 @@ vehicle %>% select(Name,`FastChargeSpeed(km/h)`)%>%filter(`FastChargeSpeed(km/h)
 #- lowest Acceleration
 vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max(`Acceleration(sec)`))
 ```
-Result :
+Result : 
+ - รถที่มีประสิทธิภาพในด้านความสามารถในการทำความเร็วสูงสุดคือ Tesla Roadster โดยมีความเร็วสูงสุดที่ทำได้อยู่ที่ 410 km/h
+ - รถที่สามารถวิ่งได้ระยะทางมากที่สุดใน 1 การชาร์จพลังงานคือ Tesla Roadster โดยระยะทางที่วิ่งได้คือ 970 km
+ - รถที่มีประสิทธิภาพสูงสุดคือ Mercedes EQV 300 Long และ Mercedes EQV 300 Extra-Long โดยทั้งสองคันมีประสิทธิภาพอยู่ที่ 281 Wh/km
+ - รถที่มีความเร็วในการชาร์จสูงสุดคือ Lucid Air Pure และมีความเร็วในการชาร์จอยู่ที่ 1410 km/h
+ - รถที่มีอัตราการเร่งถึงความเร็วสูงสุด ซึ่งใช้เวลาน้อยที่สุดในการเร่งคือ Renault Kangoo Maxi ZE 33 ซึ่งมีอัตราเร่งถึงความเร็วสูงสุดอยู่ที่ 22.4 sec
 ```
 #- highest top speed
 Name TopSpeed(km/h)
