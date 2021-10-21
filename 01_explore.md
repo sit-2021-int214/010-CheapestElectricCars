@@ -71,19 +71,19 @@ vehicle <- vehicle%>% rename(`PriceinUK(Â£)` = PriceinUK)
 ## Explore Analysis
 ### 1) รถคันไหนที่มีประสิทธิภาพสูงที่สุดในแต่ละด้าน
 ```{R}
----------highest top speed---------------
+#highest top speed
 vehicle %>% select(Name,`TopSpeed(km/h)`)%>% filter(`TopSpeed(km/h)` == max(`TopSpeed(km/h)`))
 
----------highest range-------------------
+#highest range
 vehicle %>% select(Name,`Range(km)`)%>%filter(`Range(km)` == max(`Range(km)`))
 
----------highest efficiency--------------
+#highest efficiency
 vehicle %>% select(Name,`Efficiency(Wh/km)`)%>%filter(`Efficiency(Wh/km)` == max(`Efficiency(Wh/km)`))
 
----------highest FastChargeSpeed---------
+#highest FastChargeSpeed
 vehicle %>% select(Name,`FastChargeSpeed(km/h)`)%>%filter(`FastChargeSpeed(km/h)` == max(`FastChargeSpeed(km/h)`,na.rm = T))
 
----------lowest Acceleration-------------
+#lowest Acceleration
 vehicle %>%select(Name,`Acceleration(sec)`)%>% filter(`Acceleration(sec)` == max(`Acceleration(sec)`))
 ```
 Result : 
@@ -93,20 +93,20 @@ Result :
  - รถที่มีความเร็วในการชาร์จสูงสุดคือ Lucid Air Pure และมีความเร็วในการชาร์จอยู่ที่ 1410 km/h
  - รถที่มีอัตราการเร่งถึงความเร็วสูงสุด ซึ่งใช้เวลาน้อยที่สุดในการเร่งคือ Renault Kangoo Maxi ZE 33 ซึ่งมีอัตราเร่งถึงความเร็วสูงสุดอยู่ที่ 22.4 sec
 ```
-------------highest top speed---------------
+------------ **highest top speed** ---------------
   Name TopSpeed(km/h)
 1 Tesla Roadster                    410
 
-------------highest range-------------------
+------------ **highest range** -------------------
   Name Range(km)
 1 Tesla Roadster                    970
 
-------------highest efficiency--------------
+------------ **highest efficiency** --------------
   Name Efficiency(Wh/km)
 1   Mercedes EQV 300 Long           281
 2   Mercedes EQV 300 Extra-Long     281
 
-------------highest FastChargeSpeed---------
+------------ **highest FastChargeSpeed** ---------
   Name FastChargeSpeed(km/h)
 1 Lucid Air Pure                    1410
 
@@ -115,14 +115,14 @@ Result :
 1 Renault Kangoo Maxi ZE 33         22.4
 ```
 
-### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
+### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย (20/10/21 uk = 46.17 บาท ,eu = 38.75 บาท)
 ```{R}
 vehicle %>% select(Name,`PriceinUK(Â£)`)%>%filter(`PriceinUK(Â£)`*46.17 == max(`PriceinUK(Â£)`*46.17,na.rm = T))
 ```
 Result :
 ```
-[1] Name          PriceinUK(Â£)
-<0 rows> (or 0-length row.names)
+    Name              PriceinUK(Â£)
+1 Tesla Roadster         189000
 ```
 
 ### 3) รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
@@ -131,7 +131,17 @@ vehicle %>%select(Name,NumberofSeats,`PriceinUK(Â£)`) %>%filter(NumberofSeats 
 ```
 Result :
 ```
-
+    Name                 NumberofSeats   PriceinUK(Â£)
+1  BMW i3 120 Ah                 4         31305
+2  BMW i3s 120 Ah                4         32305
+3  Honda e                       4         27660
+4  Volkswagen ID.3 Pro S         4         38800
+5  Smart EQ forfour              4         19795
+6  Honda e Advance               4         30160
+7  Fiat 500e Cabrio              4         26645
+8  Fiat 500e Hatchback 42 kWh    4         23995
+9  Fiat 500e Hatchback 24 kWh    4         20495
+10 Mini Cooper SE                4         26000
 ```
 
 ### 4) จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
