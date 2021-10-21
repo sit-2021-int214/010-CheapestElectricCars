@@ -93,27 +93,33 @@ Result :
  - รถที่มีความเร็วในการชาร์จสูงสุดคือ Lucid Air Pure และมีความเร็วในการชาร์จอยู่ที่ 1410 km/h
  - รถที่มีอัตราการเร่งถึงความเร็วสูงสุด ซึ่งใช้เวลาน้อยที่สุดในการเร่งคือ Renault Kangoo Maxi ZE 33 ซึ่งมีอัตราเร่งถึงความเร็วสูงสุดอยู่ที่ 22.4 sec
 ```
------------- **highest top speed** ---------------
+#------------ **highest top speed** ---------------
   Name TopSpeed(km/h)
 1 Tesla Roadster                    410
 
------------- **highest range** -------------------
+#------------ **highest range** -------------------
   Name Range(km)
 1 Tesla Roadster                    970
 
------------- **highest efficiency** --------------
+#------------ **highest efficiency** --------------
   Name Efficiency(Wh/km)
 1   Mercedes EQV 300 Long           281
 2   Mercedes EQV 300 Extra-Long     281
 
------------- **highest FastChargeSpeed** ---------
+#------------ **highest FastChargeSpeed** ---------
   Name FastChargeSpeed(km/h)
 1 Lucid Air Pure                    1410
 
-------------lowest Acceleration-------------
+#------------lowest Acceleration--------------
   Name Acceleration(sec)
 1 Renault Kangoo Maxi ZE 33         22.4
 ```
+  //Explain
+   - รถที่มีประสิทธิภาพในด้านความสามารถในการทำความเร็วสูงสุดคือ Tesla Roadster โดยมีความเร็วสูงสุดที่ทำได้อยู่ที่ 410 km/h
+   - รถที่สามารถวิ่งได้ระยะทางมากที่สุดใน 1 การชาร์จพลังงานคือ Tesla Roadster โดยระยะทางที่วิ่งได้คือ 970 km
+   - รถที่มีประสิทธิภาพสูงสุดคือ Mercedes EQV 300 Long และ Mercedes EQV 300 Extra-Long โดยทั้งสองคันมีประสิทธิภาพอยู่ที่ 281 Wh/km
+   - รถที่มีความเร็วในการชาร์จสูงสุดคือ Lucid Air Pure และมีความเร็วในการชาร์จอยู่ที่ 1410 km/h
+   - รถที่มีอัตราการเร่งถึงความเร็วสูงสุด ซึ่งใช้เวลาน้อยที่สุดในการเร่งคือ Renault Kangoo Maxi ZE 33 ซึ่งมีอัตราเร่งถึงความเร็วสูงสุดอยู่ที่ 22.4 sec
 
 ### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย (20/10/21 uk = 46.17 บาท ,eu = 38.75 บาท)
 ```{R}
@@ -124,6 +130,9 @@ Result :
     Name              PriceinUK(Â£)
 1 Tesla Roadster         189000
 ```
+  //Explain
+    -
+    -
 
 ### 3) รถยี่ห้อใดบ้างที่มีที่นั่งจำนวน 4 ที่นั่ง ที่มีราคาต่ำกว่าค่าเฉลี่ย
 ```{R}
@@ -143,56 +152,126 @@ Result :
 9  Fiat 500e Hatchback 24 kWh    4         20495
 10 Mini Cooper SE                4         26000
 ```
-
+   //Explain
+    -
+    -
+    
 ### 4) จำนวนของรถที่มีที่นั่งน้อยที่สุดแตกต่างกับจำนวนของรถที่มีที่นั่งมากที่สุดกี่คัน
 ```{R}
 vehicle %>% filter(NumberofSeats == max(NumberofSeats)) %>% count() - vehicle %>% filter(NumberofSeats == min(NumberofSeats)) %>% count()
 ```
 Result :
 ```
-
+    n
+1   30
 ```
-
+   //Explain
+    -
+    -
+    
 ### 5) มีรถยี่ห้อใดบ้างที่ขับเคลื่อนด้วยล้อหน้าคันใดบ้างที่มีความเร็วสูงกว่า 150 km/h
 ```{R}
 vehicle %>%filter(Drive == "Front Wheel Drive" & `TopSpeed(km/h)` > 150) %>% select(Name)
 ```
 Result :
 ```
-
+         Name
+1   Nissan Leaf e+
+2   Mercedes EQA 250
+3   Kia e-Soul 64 kWh
+4   Hyundai IONIQ Electric
+5   Hyundai Kona Electric 64 kWh
+6   Hyundai Kona Electric 39 kWh
+7   Mercedes EQV 300 Long
+8   Lexus UX 300e
+9   Kia e-Soul 64 kWh
+10  Kia e-Soul 39 kWh
+11  Nissan Ariya 63kWh
+12  Nissan Ariya 87kWh
+13  MG MG5 EV
+14  Mercedes EQV 300 Extra-Long
+15  Kia e-Niro 64 kWh
+16  Kia e-Niro 39 kWh
+17  Seres 3 
+18  Hyundai Kona Electric 39 kWh
+19  Hyundai Kona Electric 64 kWh
+20  MG MG5 Electric
+21  Polestar 2 Standard Range Single Motor
+22  Polestar 2 Long Range Single Motor
+23  Renault Megane E-Tech Electric
+24  MG MG5 EV Long Range
 ```
-
+  //Explain
+    -
+    -
+    
 ### 6) ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
 ```{R}
 vehicle %>% filter(str_detect(Name,"Tesla") & (`TopSpeed(km/h)` == max(`TopSpeed(km/h)`) & `Acceleration(sec)` == min(`Acceleration(sec)`)))%>%select(`TopSpeed(km/h)`,`Acceleration(sec)`)
 ```
 Result :
 ```
-
+        TopSpeed(km/h)   Acceleration(sec)
+1            410               2.1
 ```
-
-### 7) รถที่ราคาต่ำสุดในการขับเคลื่อนของล้อแต่ละแบบ
+   //Explain
+    -
+    -
+    
+### 7) รถที่ราคาต่ำสุดในการขับเคลื่อนของล้อแต่ละแบบและความเร็วเป็นเท่าใด
 ```{R}
 frontvehicle <- vehicle%>%filter(Drive == "Front Wheel Drive")
 allvehicle <- vehicle %>% filter(Drive == "All Wheel Drive")
 rearvehicle <- vehicle %>% filter(Drive == "Rear Wheel Drive")
+
 vehicle %>% filter(Drive == "Front Wheel Drive" &`PriceinUK(Â£)` == min(frontvehicle$`PriceinUK(Â£)`,na.rm = T))
+
 vehicle %>% filter(Drive == "All Wheel Drive" & `PriceinUK(Â£)` == min(allvehicle$`PriceinUK(Â£)`,na.rm = T))
+
 vehicle %>% filter(Drive == "Rear Wheel Drive" & `PriceinUK(Â£)` == min(rearvehicle$`PriceinUK(Â£)`,na.rm = T))
 ```
 Result :
 ```
+  #Front Wheel Drive
+          Name                          Subtitle                       Acceleration(sec)   TopSpeed(km/h)   Range(km)   Efficiency(Wh/km)   FastChargeSpeed(km/h)
+1 Fiat 500e Hatchback 24 kWh    Battery Electric Vehicle |  23.8 kWh          9.5               135           165             144                   260
+      Drive              NumberofSeats   PriceinGermany(â‚¬)   PriceinUK(Â£)
+  Front Wheel Drive             4               23560              20495
+  
+  #All Wheel Drive
+       Name                         Subtitle                   Acceleration(sec)  TopSpeed(km/h)  Range(km)   Efficiency(Wh/km)   FastChargeSpeed(km/h)         Drive
+1 Skoda Enyaq iV 80X    Battery Electric Vehicle |  77 kWh            6.9             160            405            190                   500               All Wheel Drive
+NumberofSeats   PriceinGermany(â‚¬)   PriceinUK(Â£)
+      5               47000               42000
+
+  #Rear Wheel Drive
+             Name                    Subtitle                  Acceleration(sec)  TopSpeed(km/h)  Range(km)   Efficiency(Wh/km)   FastChargeSpeed(km/h)         Drive
+1 Smart EQ fortwo coupe  Battery Electric Vehicle|  16.7 kWh          11.6             130           100            167                    NA              Rear Wheel Drive
+NumberofSeats   PriceinGermany(â‚¬)   PriceinUK(Â£)
+      2               18460               19200
 
 ```
+   //Explain
+    -
+    -
 
-### 8) รถคันใดที่มีความเร็วและประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
+### 8) รถคันใดที่มีประสิทธิภาพสูงสูด เมื่อเทียบกับรถคันอื่นๆในชุดข้อมูล
 ```{R}
 vehicle %>% filter(`Efficiency(Wh/km)` == max(`Efficiency(Wh/km)`))
 ```
 Result :
 ```
-
+   Name                                         Subtitle          Acceleration(sec)  TopSpeed(km/h)  Range(km)   Efficiency(Wh/km)   FastChargeSpeed(km/h)       Drive
+1  Mercedes EQV 300 Long Battery        Electric Vehicle|  90 kWh       12.1            160             320            281                 280           Front Wheel Drive
+2  Mercedes EQV 300 Extra-Long Battery  Electric Vehicle|  90 kWh       12.1            160             320            281                 280            Front Wheel Drive
+  
+          NumberofSeats     PriceinGermany(â‚¬)      PriceinUK(Â£)
+1               7               71388                   70665 
+2               7               72281                     NA
 ```
+   //Explain
+    -
+    -
 
 ### 9) ประสิทธิภาพโดยเฉลี่ยของรถทั้งหมด
 ```{R}
@@ -200,10 +279,10 @@ vehicle %>% summarise(mean(`Efficiency(Wh/km)`))
 ```
 Result :
 ```
-
+        mean(`Efficiency(Wh/km)`)
+1               194.2722
 ```
-
-
-
-
+   //Explain
+    -
+    -
 
