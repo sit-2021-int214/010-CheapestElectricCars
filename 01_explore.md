@@ -90,21 +90,21 @@ Result :
  - รถที่มีอัตราการเร่งถึงความเร็วสูงสุด ซึ่งใช้เวลาน้อยที่สุดในการเร่งคือ Renault Kangoo Maxi ZE 33 ซึ่งมีอัตราเร่งถึงความเร็วสูงสุดอยู่ที่ 22.4 sec
 ```
 #- highest top speed
-Name TopSpeed(km/h)
-1 Tesla Roadster             410
+  Name TopSpeed(km/h)
+1 Tesla Roadster                    410
 #- highest range
-Name Range(km)
-1 Tesla Roadster        970
+  Name Range(km)
+1 Tesla Roadster                    970
 #- highest efficiency
-Name Efficiency(Wh/km)
-1       Mercedes EQV 300 Long               281
-2 Mercedes EQV 300 Extra-Long               281
+  Name Efficiency(Wh/km)
+1   Mercedes EQV 300 Long           281
+2   Mercedes EQV 300 Extra-Long     281
 #- highest FastChargeSpeed
-Name FastChargeSpeed(km/h)
-1 Lucid Air Pure                  1410
+  Name FastChargeSpeed(km/h)
+1 Lucid Air Pure                    1410
 #- lowest Acceleration
-Name Acceleration(sec)
-1 Renault Kangoo Maxi ZE 33              22.4
+  Name Acceleration(sec)
+1 Renault Kangoo Maxi ZE 33         22.4
 ```
 
 ### 2) รถคันไหนราคาสูงที่สุดเมื่อเปรียบเทียบเป็นเงินไทย
