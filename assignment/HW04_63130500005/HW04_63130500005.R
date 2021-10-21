@@ -66,23 +66,3 @@ superstore %>% ggplot(aes(x=Segment))+geom_bar() + ggtitle("Segments") + ylab("N
 #2
 scater <- superstore %>% filter(Sales>1000) %>% ggplot(aes(x=`Order ID`,y=Sales)) + geom_point(aes(color=Category))
 scater
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
