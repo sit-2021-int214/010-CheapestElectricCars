@@ -174,35 +174,35 @@ Result :
     
 ### 5) มีรถยี่ห้อใดบ้างที่ขับเคลื่อนด้วยล้อหน้าและมีความเร็วสูงกว่า 150 km/h
 ```{R}
-vehicle %>%filter(Drive == "Front Wheel Drive" & `TopSpeed(km/h)` > 150) %>% select(Name)
+vehicle %>%filter(Drive == "Front Wheel Drive" & TopSpeed(km/h) > 150) %>% select(Name,TopSpeed(km/h),PriceinGermany(â‚¬),PriceinUK(Â£))
 ```
 Result :
 ```
-         Name
-1   Nissan Leaf e+
-2   Mercedes EQA 250
-3   Kia e-Soul 64 kWh
-4   Hyundai IONIQ Electric
-5   Hyundai Kona Electric 64 kWh
-6   Hyundai Kona Electric 39 kWh
-7   Mercedes EQV 300 Long
-8   Lexus UX 300e
-9   Kia e-Soul 64 kWh
-10  Kia e-Soul 39 kWh
-11  Nissan Ariya 63kWh
-12  Nissan Ariya 87kWh
-13  MG MG5 EV
-14  Mercedes EQV 300 Extra-Long
-15  Kia e-Niro 64 kWh
-16  Kia e-Niro 39 kWh
-17  Seres 3 
-18  Hyundai Kona Electric 39 kWh
-19  Hyundai Kona Electric 64 kWh
-20  MG MG5 Electric
-21  Polestar 2 Standard Range Single Motor
-22  Polestar 2 Long Range Single Motor
-23  Renault Megane E-Tech Electric
-24  MG MG5 EV Long Range
+                                     Name TopSpeed(km/h) PriceinGermany(â‚¬) PriceinUK(Â£)
+1                          Nissan Leaf e+            157               38350         30445
+2                        Mercedes EQA 250            160               47541         43495
+3                       Kia e-Soul 64 kWh            167                  NA         37545
+4                  Hyundai IONIQ Electric            165               35350         30550
+5            Hyundai Kona Electric 64 kWh            167               41850            NA
+6            Hyundai Kona Electric 39 kWh            155               34850            NA
+7                   Mercedes EQV 300 Long            160               71388         70665
+8                           Lexus UX 300e            160               47550         43900
+9                       Kia e-Soul 64 kWh            167               37790            NA
+10                      Kia e-Soul 39 kWh            157               33990            NA
+11                     Nissan Ariya 63kWh            160               45000         40000
+12                     Nissan Ariya 87kWh            160               50000         45000
+13                              MG MG5 EV            185                  NA         25095
+14            Mercedes EQV 300 Extra-Long            160               72281            NA
+15                      Kia e-Niro 64 kWh            167               39090         32445
+16                      Kia e-Niro 39 kWh            155               35290         30345
+17                               Seres 3             155                  NA            NA
+18           Hyundai Kona Electric 39 kWh            155               35650         27950
+19           Hyundai Kona Electric 64 kWh            167               41850         32550
+20                        MG MG5 Electric            180               35000            NA
+21 Polestar 2 Standard Range Single Motor            160               46500         39900
+22     Polestar 2 Long Range Single Motor            160               49500         42900
+23         Renault Megane E-Tech Electric            160               38000         32500
+24                   MG MG5 EV Long Range            185                  NA         26495
 ```
   //Explain
   - รถที่มีการขับเคลื่อนด้วยล้อหน้าและมีควาเร็วสูงสุดมากกว่า 150 km/h ประกอบไปด้วยยี่ห้อดังต่อไปนี้
@@ -215,7 +215,6 @@ Result :
   - Seres ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ 3 
   - Polestar ซึ่งประกอบไปด้วยรถ 2 รุ่น คือ 2 Standard Range Single Motor, 2 Long Range Single Motor
   - Renault ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ Megane E-Tech Electric
-  - (หมายเหตุ )
     
 ### 6) ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
 ```{R}
