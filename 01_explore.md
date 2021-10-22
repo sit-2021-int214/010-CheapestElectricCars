@@ -215,7 +215,7 @@ Result :
   - Seres ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ 3 
   - Polestar ซึ่งประกอบไปด้วยรถ 2 รุ่น คือ 2 Standard Range Single Motor, 2 Long Range Single Motor
   - Renault ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ Megane E-Tech Electric
-  (หมายเหตุ )
+  - (หมายเหตุ )
     
 ### 6) ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
 ```{R}
