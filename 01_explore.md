@@ -207,6 +207,15 @@ Result :
   //Explain
   - รถที่มีการขับเคลื่อนด้วยล้อหน้าและมีควาเร็วสูงสุดมากกว่า 150 km/h ประกอบไปด้วยยี่ห้อดังต่อไปนี้
   - Nissan ซึ่งประกอบไปด้วยรถ 3 รุ่น คือ Nissan Leaf e+, Nissan Ariya 63kWh, Nissan Ariya 87kWh
+  - Mercedes ซึ่งประกอบไปด้วยรถ 3 รุ่น คือ EQA 250, EQV 300 Long, EQV 300 Extra-Long
+  - Kia ซึ่งประกอบไปด้วยรถ 5 รุ่น คือ e-Soul 64 kWh, e-Soul 64 kWh, e-Soul 39 kWh, e-Niro 64 kWh, e-Niro 39 kWh
+  - Hyundai ซึ่งประกอบไปด้วยรถ 5 รุ่น คือ IONIQ Electric, Kona Electric 64 kWh, Kona Electric 39 kWh, Kona Electric 39 kWh, Kona Electric 64 kWh
+  - Lexus ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ UX 300e
+  - MG ซึ่งประกอบไปด้วยรถ 3 รุ่น คือ MG5 EV, MG5 Electric, MG5 EV Long Range
+  - Seres ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ 3 
+  - Polestar ซึ่งประกอบไปด้วยรถ 2 รุ่น คือ 2 Standard Range Single Motor, 2 Long Range Single Motor
+  - Renault ซึ่งประกอบไปด้วยรถ 1 รุ่น คือ Megane E-Tech Electric
+  (หมายเหตุ )
     
 ### 6) ความเร่งและความเร็วสูงสุดที่ Tesla สามารถทำได้คือเท่าไหร่
 ```{R}
