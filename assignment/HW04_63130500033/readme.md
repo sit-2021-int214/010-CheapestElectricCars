@@ -51,7 +51,7 @@ Result:
 ```
 [1] 54.54186
 ```
-//Explain
+หนังสือทั้งหมดมีราคาเฉลี่อยู่ที่ 54.54186
 
 2.หนังสือโดยเฉลี่ยแล้วมีทั้งกี่หน้า
 
@@ -64,7 +64,7 @@ Result:
 ```
 [1] 475.0775
 ```
-//Explain
+หนังสือทั้งหมดมีจำนวนหน้าโดยเฉลี่ยเป็น 475.0775 หน้า
 
 3.หนังสือที่มีจำนวนหน้ามากที่สุดและน้อยที่สุดคือหนังสือเล่นใด มีราคาเท่าไหร่ และหนังสือนั้นมีกี่หน้า
 
@@ -87,7 +87,8 @@ Result:
                                     Book_title       Price     Number_Of_Pages
 1 Responsive Web Design Overview For Beginners     11.26765                50
 ```
-//Explain
+-หนังสือเล่มที่มีจำนวนหน้ามากที่สุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set โดยมีราคา 220.3853 และจำนวนหน้าอยู่ที่ 3168 หน้า
+-หนังสือเล่มที่มีจำนวนหน้าน้อยที่สุดคือ Responsive Web Design Overview For Beginners โดยมีราคา 11.26765 และจำนวนหน้าอยู่ที่ 50 หน้า
 
 4.ในหนังสือแต่ละประเภท(type) หนังสือเล่มใดที่มีความนิยมสูงสุด
 
@@ -107,7 +108,12 @@ Type                    Book_title                                              
 #5 Boxed Set - Hardcover The Art of Computer Programming, Volumes 1-3 Boxed Set          4.49
 #6 Hardcover             The Art of Computer Programming, Volumes 1-4a Boxed Set         4.77
 ```
-//Explain
+-ประเภท ebook หนังสือที่ได้รับความสูงสุดคือ Your First App: Node.js
+-ประเภท Kindle Edition หนังสือที่ได้รับความสูงสุดคือ The Principles of Object-Oriented JavaScript
+-ประเภท Unknown Binding  หนังสือที่ได้รับความสูงสุดคือ How to Think Like a Computer Scientist: Learning with Python
+-ประเภท Paperback หนังสือที่ได้รับความสูงสุดคือ Designing Data-Intensive Applications: The Big Ideas Behind ~
+-ประเภท Boxed Set - Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-3 Boxed Set
+-ประเภท Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set
 
 5.ชื่อหนังสือเล่มใดบ้างที่มีคำว่า Network
 
@@ -124,7 +130,11 @@ Result:
 #[4] "Communication Networks: Fundamental Concepts and Key Architectures"     
 
 ```
-//Explain
+หนังสือเหล่านี้เป็นหนังสือที่มีชื่อเรื่องเกี่ยวกับ Network
+-"Make Your Own Neural Network: An In-depth Visual Introduction For Beginners"
+-"High Performance Browser Networking"   
+-"Make Your Own Neural Network" 
+-"Communication Networks: Fundamental Concepts and Key Architectures"
 
 6.หนังสือที่ได้รับความนิยมสูงสุดคือเล่มใด และมีเรทติ้ง จำนวนคนรีวิว ชนิดของหนังสือ และราคาเท่าใด
 
@@ -138,7 +148,7 @@ Result:
                 Book_title       Rating      Reviews       Type        Price
 #1 Your First App: Node.js            5            0      ebook     25.85588
 ```
-//Explain
+หนังสือที่ได้รัความนิยมสูงสุดคือ Your First App: Node.js ซึ่งมีเรทติ้งอยู่ที่ 5 ในขณะที่จำนวนคนรีวิวเป็น 0 และเป็นหนังสือประเภท ebook ที่มีราคา 25.85588
 
 ## Part 4: Visualization with GGplot2
 ### 1.) กราฟแสดงความสัมพันธ์ระหว่างชนิดของหนังสือกับจำนวนของหนังสือในแต่ละชนิด
