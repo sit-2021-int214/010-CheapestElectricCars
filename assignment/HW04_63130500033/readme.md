@@ -115,8 +115,8 @@ Result:
                                     Book_title       Price     Number_Of_Pages
 1 Responsive Web Design Overview For Beginners     11.26765                50
 ```
--หนังสือเล่มที่มีจำนวนหน้ามากที่สุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set โดยมีราคา 220.3853 และจำนวนหน้าอยู่ที่ 3168 หน้า
--หนังสือเล่มที่มีจำนวนหน้าน้อยที่สุดคือ Responsive Web Design Overview For Beginners โดยมีราคา 11.26765 และจำนวนหน้าอยู่ที่ 50 หน้า
+- หนังสือเล่มที่มีจำนวนหน้ามากที่สุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set โดยมีราคา 220.3853 และจำนวนหน้าอยู่ที่ 3168 หน้า
+- หนังสือเล่มที่มีจำนวนหน้าน้อยที่สุดคือ Responsive Web Design Overview For Beginners โดยมีราคา 11.26765 และจำนวนหน้าอยู่ที่ 50 หน้า
 
 4.ในหนังสือแต่ละประเภท(type) หนังสือเล่มใดที่มีความนิยมสูงสุด
 
@@ -136,12 +136,12 @@ Type                    Book_title                                              
 #5 Boxed Set - Hardcover The Art of Computer Programming, Volumes 1-3 Boxed Set          4.49
 #6 Hardcover             The Art of Computer Programming, Volumes 1-4a Boxed Set         4.77
 ```
--ประเภท ebook หนังสือที่ได้รับความสูงสุดคือ Your First App: Node.js
--ประเภท Kindle Edition หนังสือที่ได้รับความสูงสุดคือ The Principles of Object-Oriented JavaScript
--ประเภท Unknown Binding  หนังสือที่ได้รับความสูงสุดคือ How to Think Like a Computer Scientist: Learning with Python
--ประเภท Paperback หนังสือที่ได้รับความสูงสุดคือ Designing Data-Intensive Applications: The Big Ideas Behind ~
--ประเภท Boxed Set - Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-3 Boxed Set
--ประเภท Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set
+- ประเภท ebook หนังสือที่ได้รับความสูงสุดคือ Your First App: Node.js
+- ประเภท Kindle Edition หนังสือที่ได้รับความสูงสุดคือ The Principles of Object-Oriented JavaScript
+- ประเภท Unknown Binding  หนังสือที่ได้รับความสูงสุดคือ How to Think Like a Computer Scientist: Learning with Python
+- ประเภท Paperback หนังสือที่ได้รับความสูงสุดคือ Designing Data-Intensive Applications: The Big Ideas Behind ~
+- ประเภท Boxed Set - Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-3 Boxed Set
+- ประเภท Hardcover หนังสือที่ได้รับความสูงสุดคือ The Art of Computer Programming, Volumes 1-4a Boxed Set
 
 5.ชื่อหนังสือเล่มใดบ้างที่มีคำว่า Network
 
@@ -159,10 +159,10 @@ Result:
 
 ```
 หนังสือเหล่านี้เป็นหนังสือที่มีชื่อเรื่องเกี่ยวกับ Network
--"Make Your Own Neural Network: An In-depth Visual Introduction For Beginners"
--"High Performance Browser Networking"   
--"Make Your Own Neural Network" 
--"Communication Networks: Fundamental Concepts and Key Architectures"
+- "Make Your Own Neural Network: An In-depth Visual Introduction For Beginners"
+- "High Performance Browser Networking"   
+- "Make Your Own Neural Network" 
+- "Communication Networks: Fundamental Concepts and Key Architectures"
 
 6.หนังสือที่ได้รับความนิยมสูงสุดคือเล่มใด และมีเรทติ้ง จำนวนคนรีวิว ชนิดของหนังสือ และราคาเท่าใด
 
