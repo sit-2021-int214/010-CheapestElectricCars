@@ -149,7 +149,7 @@ ggplot(topBooks,aes(x=Type))+geom_bar()+ggtitle("Number of Book in each type")+x
 ```
 Result:
 
-![totalCategory](plot1.png)
+![bar](ggplot_bar.png)
 
 ### 2.) กราฟแสดงความสัมพันธ์ระหว่างราคากับจำนวนหน้าของหนังสือประเภท ebook
 ```
@@ -159,6 +159,6 @@ eBook %>% ggplot(aes(x=Number_Of_Pages,y=Price))+geom_point()
 ```
 Result:
 
-![point](plot2.png)
+![point](ggplot_point.png)
 
 
