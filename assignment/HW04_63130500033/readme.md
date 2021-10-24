@@ -31,12 +31,40 @@ topBooks <- read.csv("https://raw.githubusercontent.com/safesit23/INT214-Statist
 
 ## Part 2: Learning function from Tidyverse
 
-- Function `select()` from package [dplyr](https://dplyr.tidyverse.org/articles/dplyr.html#select-columns-with-select)). It using for select columns
+- Function `desc(x)` จาก package [dplyr](https://dplyr.tidyverse.org/reference/desc.html). ใช้ในการแปลง vector ให้อยู่ในรูปแบบการจากจัดเรียงจากมากไปน้อย ในที่นี้ x ก็คือ vector ที่จะใช้แปลง โดย Function นี้สามารถนำมาใช้งานคู่กับ  `arrange()` ได้
 
 ```
-starwars %>% select(name,height)
+#แบบที่1
+desc(1:10)
+
+#แบบที่2
+starwars %>% arrange(desc(mass))
+
 ```
-** You can sepearate this part or combine in part of `Transform data with dplyr and finding insight the data`
+Result: ผลลัพธ์ที่เกิดขึ้นทั้ง 2 รูปแบบ จะเกิดการจัดเรียงข้อมูลใหม่จากมากไปหาน้อย
+
+```
+#แบบที่1
+#>  [1]  -1  -2  -3  -4  -5  -6  -7  -8  -9 -10
+
+#แบบที่2
+#> # A tibble: 87 x 14
+#>    name    height  mass hair_color  skin_color eye_color birth_year sex   gender
+#>    <chr>    <int> <dbl> <chr>       <chr>      <chr>          <dbl> <chr> <chr> 
+#>  1 Jabba …    175  1358 NA          green-tan… orange         600   herm… mascu…
+#>  2 Grievo…    216   159 none        brown, wh… green, y…       NA   male  mascu…
+#>  3 IG-88      200   140 none        metal      red             15   none  mascu…
+#>  4 Darth …    202   136 none        white      yellow          41.9 male  mascu…
+#>  5 Tarfful    234   136 brown       brown      blue            NA   male  mascu…
+#>  6 Owen L…    178   120 brown, grey light      blue            52   male  mascu…
+#>  7 Bossk      190   113 none        green      red             53   male  mascu…
+#>  8 Chewba…    228   112 brown       unknown    blue           200   male  mascu…
+#>  9 Jek To…    180   110 brown       fair       blue            NA   male  mascu…
+#> 10 Dexter…    198   102 none        brown      yellow          NA   male  mascu…
+#> # … with 77 more rows, and 5 more variables: homeworld <chr>, species <chr>,
+#> #   films <list>, vehicles <list>, starships <list>
+
+```
 
 ## Part 3: Transform data with dplyr and finding insight the data
 
