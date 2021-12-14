@@ -3,6 +3,22 @@ Electronic Car Company has a total of 180 electric cars. The average of top spee
 Using the critical value approach, test to determine if Mercedes speed less than average top speed  (Let a =  0.05)
 At 95% confidence, Compute interval estimateion of pop mean.
 
+### หา SD ค่าของ top speed ของรถยี่ห้อ mercedes
+
+| MERCEDES | TOP SPEED(km/h) |
+|:---:|--------------------------|
+| Mercedes EQA 250    | 160 |
+| Mercedes EQA 300 4MATIC  | 160 |
+|  Mercedes EQA 350 4MATIC  | 160 | 
+|  Mercedes EQB 350 4MATIC  | 160  |
+|  Mercedes EQC 400 4MATIC  | 180  |
+|  Mercedes EQS 450+  | 210  |
+|  Mercedes EQS 580 4MATIC  | 210  |
+|  Mercedes EQV 300 Extra-Long | 160  |
+|  Mercedes EQV 300 Long  | 160  |
+| sd | 21.79  |
+
+
 ### Step 0: Assign variables
 
 ```
