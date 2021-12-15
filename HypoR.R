@@ -14,16 +14,24 @@ vehicle <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/010-Cheap
 mercedes <- vehicle %>% filter(str_detect(Name,"Mercedes"))
 
 n <- count(vehicle) %>% as.numeric()
+print(n)
 alpha <- 0.05
+print(alpha)
 mean <- mean(mercedes$TopSpeed.km.h.)
+print(mean)
 sd <- sd(mercedes$TopSpeed.km.h.)
+print(sd)
 mue0 <- mean(vehicle$TopSpeed.km.h.)
+print(mue0)
 
 t <- (mean-mue0)/(sd/(sqrt(n)))
+print(t)
 
 pvalue <- pt(t, n-1 ,lower.tail = FALSE)
+print(pvalue)
 
 tcrit <- qt(1-alpha, n-1)
+print(tcrit)
 
 if(pvalue <= alpha){
   print("Reject H0")
