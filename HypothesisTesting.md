@@ -1,4 +1,4 @@
-## Analytical Inferential Statistics :red_car:
+## Analytical Inferential Statistics :chart_with_downwards_trend:
 #### :shipit: δ unknown
 Electronic Car Company has a total of 180 electric cars. The average of top speed 180 cars is 176.40 km/hr. 
 Using the critical value approach, test to determine if Mercedes speed less than average top speed  (Let a =  0.05)
@@ -65,7 +65,8 @@ t <- (mean-mue0)/(sd/(sqrt(n)))
 
 ```
 # P-value approach
-
+pvalue <- pt(t, n-1 ,lower.tail = FALSE)
+# 0.969
 
 # Critical Value approach
 tcrit <- qt(1-alpha, n-1)
@@ -92,5 +93,5 @@ if(t >= tcrit){
 ```
 
 ### Step 6: Conclusion
-The conclusion is  Reject H0
-That's mean Mecedes speed is more than average top speed.
+The conclusion is Accept H0
+That's mean Mecedes speed is less than average top speed.
