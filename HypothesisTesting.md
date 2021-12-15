@@ -104,5 +104,5 @@ if(t >= tcrit){
 ```
 
 ### Step 6: Conclusion
-The conclusion is Accept H0
+The conclusion is Accept H0.
 That's mean Mecedes speed is less than average top speed.
