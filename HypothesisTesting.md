@@ -1,4 +1,5 @@
 ## Analytical Inferential Statistics 
+#### δ unknown
 Electronic Car Company has a total of 180 electric cars. The average of top speed 180 cars is 176.40 km/hr. 
 Using the critical value approach, test to determine if Mercedes speed less than average top speed  (Let a =  0.05)
 At 95% confidence, Compute interval estimateion of pop mean.
@@ -22,10 +23,21 @@ At 95% confidence, Compute interval estimateion of pop mean.
 ### Step 0: Assign variables
 
 ```
-n <- 180
-µ <- 
-mean <-  
-sd <- 
+mercedes <- vehicle %>% filter(str_detect(Name,"Mercedes"))
+
+n <- count(vehicle) %>% as.numeric()
+#180
+
+alpha <- 0.05
+
+mean <- mean(mercedes$TopSpeed.km.h.)
+# 173.33
+
+sd <- sd(mercedes$TopSpeed.km.h.)
+#21.79
+
+mue0 <- mean(vehicle$TopSpeed.km.h.)
+#176.4
 
 ```
 
@@ -45,8 +57,8 @@ alpha <- 0.05
 ### Step 3: Test statistic
 
 ```
-
-
+t <- (mean-mue0)/(sd/(sqrt(n)))
+#-1.887
 ```
 
 ### Step 4: Finding P-value approach or Critical Value approach
@@ -56,6 +68,8 @@ alpha <- 0.05
 
 
 # Critical Value approach
+tcrit <- qt(1-alpha, n-1)
+#1.653
 
 ```
 
@@ -70,7 +84,7 @@ if(pvalue<=alpha){
 }
 
 # Using critical value
-if(z<=-zalpha){
+if(t >= tcrit){
   print("Reject H0")
 }else{
   print("Accept H0")
