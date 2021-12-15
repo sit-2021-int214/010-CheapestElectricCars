@@ -1,4 +1,4 @@
-## Analytical Inferential Statistics :beer:
+## Analytical Inferential Statistics 
 Electronic Car Company has a total of 180 electric cars. The average of top speed 180 cars is 176.40 km/hr. 
 Using the critical value approach, test to determine if Mercedes speed less than average top speed  (Let a =  0.05)
 At 95% confidence, Compute interval estimateion of pop mean.
