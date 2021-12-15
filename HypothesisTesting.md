@@ -20,6 +20,17 @@ At 95% confidence, Compute interval estimateion of pop mean.
 | sd | 21.79  |
 
 
+### Install Library && Import CSV
+```
+library("dplyr")
+library("readr")
+library("stringr")
+
+vehicle <- read.csv("https://raw.githubusercontent.com/sit-2021-int214/010-CheapestElectricCars/main/cheapestElectricCars(Clean).csv");
+
+mercedes <- vehicle %>% filter(str_detect(Name,"Mercedes"))
+```
+
 ### Step 0: Assign variables
 
 ```
