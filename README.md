@@ -30,8 +30,8 @@ We chose this dataset because we want to study the data of electric cars. Which 
 ## Table of Contents
 
 1. [Exploratory Data Analysis](./01_explore.md)
-2. [Data Visualization]()
-3. [Hypothesis Testing](./HypothesisTesting.md)
+2. [Data Visualization](https://app.powerbi.com/view?r=eyJrIjoiODRiZDlmNmEtYThkZC00MmZkLWE2NjgtYTk4YWZiOTE3MDczIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSection&fbclid=IwAR21AM5x-8MUzOszv3a0yboQXHH-huabZJ0qWfQcCbJb_wIMiIXN1CeU54Q)
+3. [Analytical Inferential Statistics](./HypothesisTesting.md)
 
 ## Resources
 
