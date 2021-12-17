@@ -20,12 +20,15 @@ We chose this dataset because we want to study the data of electric cars. Which 
    - Change the data type according to the data.
    - Rename columns to have units.
    - Check data that is NA.
+5. Data Visualization
+6. Analytical Inferential Statistics
 
 
 ### Tools
 
 - R Language
 - R Studio Desktop
+- Microsoft Power BI
 
 ## Table of Contents
 
