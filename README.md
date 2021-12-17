@@ -31,6 +31,7 @@ We chose this dataset because we want to study the data of electric cars. Which 
 
 1. [Exploratory Data Analysis](./01_explore.md)
 2. [Data Visualization]()
+3. [Hypothesis Testing](./HypothesisTesting.md)
 
 ## Resources
 
